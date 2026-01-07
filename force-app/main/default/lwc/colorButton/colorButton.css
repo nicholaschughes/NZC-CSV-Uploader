@@ -1,0 +1,22 @@
+.color-button {
+    /* Allow rounded corners configurable via CSS var if needed */
+    border-radius: var(--cb-radius, 0.25rem);
+    transition: background-color 120ms ease-in, border-color 120ms ease-in, color 120ms ease-in;
+}
+
+/* 3x bigger button with increased padding while retaining SLDS styling */
+.color-button {
+    font-size: 3rem;          /* roughly 3x default size */
+    line-height: 1.2;         /* maintain vertical rhythm */
+    padding: 1rem 2rem;       /* add more padding for larger hit area */
+    min-height: 3rem;         /* ensure adequate height */
+}
+
+.swatch {
+    display: inline-block;
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    vertical-align: middle;
+}

@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-card slds-p-around_small">
+        <div class="slds-text-heading_small slds-m-bottom_small">{label}</div>
+        <button
+            class="slds-button slds-button_neutral color-button"
+            style={buttonStyle}
+            onclick={handleClick}
+            aria-pressed={ariaPressed}
+        >
+            {buttonText}
+        </button>
+        <div class="slds-m-top_small slds-text-body_small">
+            Current color: <span class="swatch" style={swatchStyle} aria-hidden="true"></span>
+            <span class="slds-m-left_x-small">{currentColor}</span>
+        </div>
+    </div>
+</template>
